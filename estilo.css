@@ -1,0 +1,635 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Essencial para evitar quebras de margem */
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Garante que nada saia pela direita */
+    background-color: rgb(5, 5, 5);
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    width: 75px;
+    height: 43px;
+    animation-name: animation-logo1;
+    animation-duration: 4s;
+    margin-right: 5px;
+
+
+}
+
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right, #000000, #4c037e);
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+   
+    
+
+
+
+}
+
+main {
+    background-color: rgb(9, 9, 9);
+    height: 92vh;
+  
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+
+    opacity: 0;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+
+}
+
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+@keyframes animation-logo1 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-logo2 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.1;
+    }
+
+    25%{
+        opacity:0.2;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-logo3 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    25%{
+        opacity:0.1;
+    }
+
+    27%{
+        opacity:0.2;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blocos {
+    display: flex;
+    flex-direction: column; /* Mantém as fileiras uma embaixo da outra */
+    align-items: center;
+    padding: 40px 10px;
+    width: 100%;
+}
+
+/* Cada fileira de logos */
+.blocks {
+    display: flex;
+    flex-wrap: wrap; /* ESSENCIAL: permite que os logos quebrem linha no celular */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* O quadrado de cada logo */
+.bloco {
+    width: 80px;  /* Tamanho padrão que você usou */
+    height: 80px;
+    margin: 20px; /* Espaçamento entre eles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Garante que o logo não estique nem amasse */
+}
+
+
+.title {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.jm-text {
+    font-size: 17pt;
+    color: white;
+    margin-right: 1vh;
+        animation-name: animation-logo2;
+    animation-duration: 4s;
+    
+}
+
+.ofe-text {
+    margin-top: 3px;
+    font-size: 8pt;
+    color: white;
+        animation-name: animation-logo3;
+    animation-duration: 4s;
+
+}
+
+.slider {
+
+
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    margin-top: 9vh;
+}
+
+figure {
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 30s slide infinite;
+}
+
+.slide {
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.slide img {
+    width: 100%;
+    height: 80vh;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    55% {
+        left: -300%;
+    }
+
+    65% {
+        left: -300%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    74% {
+        left: -200%;
+    }
+
+    75% {
+        left: -100%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    90% {
+        left: 0;
+    }
+
+    1000% {
+        left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .slider {
+        height: 40vh !important;
+    }
+
+    .slide img {
+        height: 30vh !important;
+    }
+    main{
+        height: 40vh;
+    }
+}
+
+.qs{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    background-color: rgb(0, 0, 175);
+   
+   
+    border-radius: 4vh;
+       box-shadow: inset 0 0 4vh 1vh rgb(7, 1, 32);
+       
+    margin-left: 10px;
+     margin-right: 10px;
+      margin-bottom: 10px;
+       margin-top: 15vh;
+
+       /* ... seu código ... */
+    min-height: 20vh;  /* Evite height fixo aqui também */
+    height: auto;
+    padding: 20px;     /* Use padding para o texto não encostar na borda */
+      
+       
+       
+}
+
+.qs p{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.text-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+       
+}
+
+.loc{
+ width: 100%;
+    min-height: 50vh; /* Mudado de height para min-height */
+    height: auto;      /* Garante que aceite o conteúdo */
+    display: flex;
+    align-items: center;
+    padding: 20px 0;   /* Adiciona um respiro no topo e fundo */
+
+   
+}
+
+.fotofrente{
+    width: 50vh;
+    height: 45vh;
+     margin-left: 2vh;
+     border-radius: 10%;
+}
+
+.inf{
+    display:block;
+}
+
+.p1{
+    display: flex;
+    margin:0.5vh ;
+   
+}
+
+.p2{
+    display: block;
+    margin:2vh;
+}
+
+
+
+.inf img{
+    width: 5vh;
+    height: 5vh;
+}
+
+.inf p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.linkcont{
+    width: 15vh;
+    height: 7vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+    margin-top: 1vh;
+}
+
+.linkcont:hover{
+      background-color: rgb(4, 4, 223);
+}
+
+.fotoscanner{
+      width: 25vh;
+    height: 25vh;
+     margin-left: 2vh;
+     border-radius: 10%;
+}
+
+.loc h2{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right, #000000, #4c037e);
+    height: 15vh;
+
+    color: white;
+   right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.container-marcas h2{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+@media (max-width: 1050px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .blocos {
+        width: 100%;
+        flex-direction: column;
+
+      
+    }
+
+    .loc{
+        height: 40vh;
+    }
+
+    .fotofrente{
+        width: 25vh;
+        height: 25vh;
+          margin-left: 2vh;
+      
+    }
+
+
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translate(100%);
+        transition: transform 0.3s ease-in;
+
+
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        opacity: 100%;
+        cursor: pointer;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .bloco {
+        width: 60px; /* Diminui um pouco o tamanho no celular */
+        height: 60px;
+        margin: 10px; /* Diminui o espaço para caber mais logos lado a lado */
+    }
+    
+    .logo-largo { width: 80px !important; }
+    .logo-extra-largo { width: 100px !important; }
+}
+
+.nav-list.active {
+    transform: translate(0);
+}
+
+@media (max-width: 370px) {
+   .loc{
+     display: block;
+   }
+}
+
+
+
+

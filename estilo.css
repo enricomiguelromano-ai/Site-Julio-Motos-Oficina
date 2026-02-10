@@ -1,15 +1,17 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Essencial para evitar quebras de margem */
+    box-sizing: border-box;
+  
 }
 
-html, body {
+html,
+body {
     width: 100%;
-    overflow-x: hidden; /* Garante que nada saia pela direita */
+    overflow-x: hidden;
+ 
     background-color: rgb(5, 5, 5);
 }
-
 
 a {
     color: #fff;
@@ -33,7 +35,7 @@ nav a:hover {
 
 #moto {
     margin-top: 10vh;
-     margin-bottom: -10vh;
+    margin-bottom: -10vh;
     width: 15vh;
     height: 15vh;
     background-color: transparent;
@@ -83,8 +85,8 @@ header nav {
     left: 0;
     width: 100%;
     z-index: 100;
-   
-    
+
+
 
 
 
@@ -93,7 +95,7 @@ header nav {
 main {
     background-color: rgb(9, 9, 9);
     height: 92vh;
-  
+
 }
 
 .nav-list {
@@ -207,8 +209,8 @@ main {
         opacity: 0.1;
     }
 
-    25%{
-        opacity:0.2;
+    25% {
+        opacity: 0.2;
     }
 
     30% {
@@ -257,12 +259,12 @@ main {
         opacity: 0;
     }
 
-    25%{
-        opacity:0.1;
+    25% {
+        opacity: 0.1;
     }
 
-    27%{
-        opacity:0.2;
+    27% {
+        opacity: 0.2;
     }
 
     30% {
@@ -300,7 +302,7 @@ main {
 
 .blocos {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     padding: 40px 10px;
     width: 100%;
@@ -309,7 +311,7 @@ main {
 
 .blocks {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -317,19 +319,19 @@ main {
 
 
 .bloco {
-    width: 80px;  
+    width: 80px;
     height: 80px;
-    margin: 20px; 
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-      animation-name: slideUp;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 
 }
 
-.bloco:hover{
+.bloco:hover {
     transform: scale(1.4);
     transition: 3s;
 }
@@ -339,7 +341,7 @@ main {
 .bloco img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
 
@@ -354,16 +356,16 @@ main {
     font-size: 17pt;
     color: white;
     margin-right: 1vh;
-        animation-name: animation-logo2;
+    animation-name: animation-logo2;
     animation-duration: 4s;
-    
+
 }
 
 .ofe-text {
     margin-top: 3px;
     font-size: 8pt;
     color: white;
-        animation-name: animation-logo3;
+    animation-name: animation-logo3;
     animation-duration: 4s;
 
 }
@@ -462,12 +464,13 @@ figure {
     .slide img {
         height: 30vh !important;
     }
-    main{
+
+    main {
         height: 40vh;
     }
 }
 
-.qs{
+.qs {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     justify-content: center;
@@ -475,88 +478,91 @@ figure {
     display: block;
     text-align: center;
     background-color: rgb(0, 0, 175);
-   
-   
-    border-radius: 4vh;
-       box-shadow: inset 0 0 4vh 1vh rgb(7, 1, 32);
-       
-    margin-left: 10px;
-     margin-right: 10px;
-      margin-bottom: 10px;
-       margin-top: 15vh;
 
-       /* ... seu código ... */
-    min-height: 20vh;  /* Evite height fixo aqui também */
+
+    border-radius: 4vh;
+    box-shadow: inset 0 0 4vh 1vh rgb(7, 1, 32);
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 15vh;
+
+
+    min-height: 20vh;
     height: auto;
-    padding: 20px;     /* Use padding para o texto não encostar na borda */
-      
-       
-       
+    padding: 20px;
+
+
+
 }
 
-.qs p{
+.qs p {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 25px;
 }
 
-.text-box{
+.text-box {
     display: flex;
     justify-content: center;
     align-items: center;
 
-       
+
 }
 
-.loc{
- width: 100%;
-    min-height: 50vh; /* Mudado de height para min-height */
-    height: auto;      /* Garante que aceite o conteúdo */
+.loc {
+    width: 100%;
+    min-height: 50vh;
+   
+    height: auto;
+   
     display: flex;
     align-items: center;
-    padding: 20px 0;   /* Adiciona um respiro no topo e fundo */
-    animation-name: slideUp;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-
+    padding: 20px 0;
    
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+
 }
 
-.fotofrente{
+.fotofrente {
     width: 50vh;
     height: 45vh;
-     margin-left: 2vh;
-     border-radius: 10%;
+    margin-left: 2vh;
+    border-radius: 10%;
 }
 
-.inf{
-    display:block;
-}
-
-.p1{
-    display: flex;
-    margin:0.5vh ;
-   
-}
-
-.p2{
+.inf {
     display: block;
-    margin:2vh;
+}
+
+.p1 {
+    display: flex;
+    margin: 0.5vh;
+
+}
+
+.p2 {
+    display: block;
+    margin: 2vh;
 }
 
 
 
-.inf img{
+.inf img {
     width: 5vh;
     height: 5vh;
 }
 
-.inf p{
+.inf p {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.linkcont{
+.linkcont {
     width: 15vh;
     height: 7vh;
     background-color: blue;
@@ -565,31 +571,48 @@ figure {
     justify-content: center;
     border-radius: 2vh;
     margin-top: 1vh;
+
 }
 
-.linkcont:hover{
-      background-color: rgb(4, 4, 223);
+.linkcont a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.fotoscanner{
-      width: 25vh;
+.linkcont:hover {
+    transform: scale(1.1);
+}
+
+.linkcont:hover {
+    background-color: rgb(4, 4, 223);
+}
+
+.fotoscanner {
+    width: 25vh;
     height: 25vh;
-     margin-left: 2vh;
-     border-radius: 10%;
+    margin-left: 2vh;
+    border-radius: 10%;
 }
 
-.fotoscanner:hover, .fotofrente:hover{
+.fotoscanner:hover,
+.fotofrente:hover {
     transform: scale(1.1);
     transition: 4s;
 }
 
-.loc h2{
-    color:white;
+.loc h2 {
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer {
-      display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -597,12 +620,12 @@ footer {
     height: 15vh;
 
     color: white;
-   right: 0;
+    right: 0;
     width: 100%;
     z-index: 100;
 }
 
-.container-marcas h2{
+.container-marcas h2 {
     color: white;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -620,18 +643,18 @@ footer {
         width: 100%;
         flex-direction: column;
 
-      
+
     }
 
-    .loc{
+    .loc {
         height: 40vh;
     }
 
-    .fotofrente{
+    .fotofrente {
         width: 25vh;
         height: 25vh;
-          margin-left: 2vh;
-      
+        margin-left: 2vh;
+
     }
 
 
@@ -668,13 +691,20 @@ footer {
 
 @media (max-width: 600px) {
     .bloco {
-        width: 60px; /* Diminui um pouco o tamanho no celular */
+        width: 60px;
+       
         height: 60px;
-        margin: 10px; /* Diminui o espaço para caber mais logos lado a lado */
+        margin: 10px;
+        
     }
-    
-    .logo-largo { width: 80px !important; }
-    .logo-extra-largo { width: 100px !important; }
+
+    .logo-largo {
+        width: 80px !important;
+    }
+
+    .logo-extra-largo {
+        width: 100px !important;
+    }
 }
 
 .nav-list.active {
@@ -682,22 +712,22 @@ footer {
 }
 
 @media (max-width: 370px) {
-   .loc{
-     display: block;
-   }
+    .loc {
+        display: block;
+    }
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 

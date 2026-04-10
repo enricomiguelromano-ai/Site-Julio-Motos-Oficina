@@ -525,6 +525,14 @@ footer {
 }
 
 
+iframe{
+    margin-top: 15vh;
+    height: 60vh;
+    width: 60%;
+    margin-left: 2vh;
+    border-radius: 5vh;
+}
+
 
 @media (max-width: 1050px) {
 
@@ -538,6 +546,15 @@ footer {
 
 
     }
+
+    
+iframe{
+    margin-top: 5vh;
+    height: 35vh;
+    width: 65%;
+    margin-left: 1vh;
+    border-radius: 2vh;
+}
 
     .loc {
         height: 40vh;
